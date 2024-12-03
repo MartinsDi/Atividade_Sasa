@@ -1,0 +1,55 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = ViewBag.Layout ?? "~/Views/Shared/_Layout-geral.cshtml";
+    ViewBag.Title = "SystemLock - Contato";
+
+}
+
+<div class="contato-container">
+    <h2 class="text-center">Entre em Contato</h2>
+    <p class="text-center">Estamos aqui para te ajudar! Fale conosco através do formulário abaixo ou por um dos nossos canais de atendimento.</p>
+
+    <!-- Formulário de Contato -->
+    <div class="contato-form">
+        <form action="/Contato/EnviarContato" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Seu nome completo" required />
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Seu e-mail" required />
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem/Dúvida:</label>
+                <textarea name="mensagem" id="mensagem" class="form-control" rows="5" placeholder="Escreva sua dúvida ou mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Mensagem de Sucesso -->
+    @if (ViewBag.Message != null)
+    {
+        <div class="alert alert-success">@ViewBag.Message</div>
+    }
+
+    <!-- Informações de Contato -->
+    <div class="contato-info">
+        <h3>Outras Formas de Contato</h3>
+        <ul>
+            <li>E-mail: <a href="mailto:suporte@systemlock.com">suporte@systemlock.com</a></li>
+            <li>Telefone: (11) 4002-8922</li>
+            <li>WhatsApp: <a href="https://wa.me/551140028922" target="_blank">(11) 4002-8922</a></li>
+            <li>Horário de Atendimento: Segunda a Sexta, das 8h às 18h</li>
+        </ul>
+    </div>
+
+    <!-- Link para WhatsApp ou Chat Flutuante -->
+    <div class="contato-chat">
+        <p>Ou entre em contato diretamente pelo WhatsApp:</p>
+        <a href="https://wa.me/551140028922" target="_blank" class="btn btn-success">Fale Conosco no WhatsApp</a>
+    </div>
+</div>

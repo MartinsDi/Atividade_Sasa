@@ -1,0 +1,121 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Links para jQuery e JS do Bootstrap (antes de seu script) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    Layout = ViewBag.Layout ?? "~/Views/Shared/_Layout-geral.cshtml";
+    ViewBag.Title = "SystemLock - Área do cliente";
+}
+<!-- Botão da Área do Cliente -->
+<li class="nav-item nav-Cliente-area">
+    <a class="nav-link text-black" id="areaClienteBtn" href="#">Área do Cliente</a>
+</li>
+
+<!-- Modal -->
+<div class="modal fade" id="clienteModal" tabindex="-1" role="dialog" aria-labelledby="clienteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="clienteModalLabel">Área do Cliente</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Por favor, selecione uma opção:</p>
+                <button class="btn btn-primary" id="loginOption">Login</button>
+                <button class="btn btn-secondary" id="cadastroOption">Cadastro</button>
+
+                <!-- Formulário de Login -->
+                <div id="loginForm" style="display: none;">
+                    <h6>Login</h6>
+                    <div class="form-group">
+                        <label for="loginEmail">E-mail:</label>
+                        <input type="email" class="form-control" id="loginEmail" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Senha:</label>
+                        <input type="password" class="form-control" id="loginPassword" placeholder="Digite sua senha" required>
+                    </div>
+                    <button class="btn btn-success" id="submitLogin">Entrar</button>
+                </div>
+
+                <!-- Formulário de Cadastro -->
+                <div id="cadastroForm" style="display: none;">
+                    <h6>Cadastro</h6>
+                    <div class="form-group">
+                        <label for="fullName">Nome Completo:</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Endereço:</label>
+                        <input type="text" class="form-control" id="address" placeholder="Digite seu endereço" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">E-mail:</label>
+                        <input type="email" class="form-control" id="registerEmail" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Senha:</label>
+                        <input type="password" class="form-control" id="registerPassword" placeholder="Digite sua senha" required>
+                    </div>
+                    <button class="btn btn-success" id="submitRegister">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Estilização do Modal -->
+<style>
+    .modal-content {
+        background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    }
+</style>
+
+<script>
+
+    document.getElementById('areaClienteBtn').addEventListener('click', function (event) {
+        event.preventDefault(); // Evita que o link siga seu destino padrão
+        $('#clienteModal').modal('show'); // Abre o modal
+    });
+
+    // Manipular seleção entre Login e Cadastro
+    document.getElementById('loginOption').addEventListener('click', function () {
+        document.getElementById('loginForm').style.display = 'block'; // Mostrar formulário de login
+        document.getElementById('cadastroForm').style.display = 'none'; // Esconder formulário de cadastro
+    });
+
+    document.getElementById('cadastroOption').addEventListener('click', function () {
+        document.getElementById('cadastroForm').style.display = 'block'; // Mostrar formulário de cadastro
+        document.getElementById('loginForm').style.display = 'none'; // Esconder formulário de login
+    });
+
+    // Adicionar funcionalidade para enviar o formulário de login
+    document.getElementById('submitLogin').addEventListener('click', function () {
+        const email = document.getElementById('loginEmail').value;
+        const password = document.getElementById('loginPassword').value;
+        // Aqui você pode implementar a lógica de autenticação
+        console.log('Login:', { email, password });
+        // Fechar o modal após o envio (se necessário)
+        $('#clienteModal').modal('hide');
+    });
+
+    // Adicionar funcionalidade para enviar o formulário de cadastro
+    document.getElementById('submitRegister').addEventListener('click', function () {
+        const fullName = document.getElementById('fullName').value;
+        const address = document.getElementById('address').value;
+        const email = document.getElementById('registerEmail').value;
+        const password = document.getElementById('registerPassword').value;
+        // Aqui você pode implementar a lógica de registro
+        console.log('Cadastro:', { fullName, address, email, password });
+        // Fechar o modal após o envio (se necessário)
+        $('#clienteModal').modal('hide');
+    });
+
+</script>

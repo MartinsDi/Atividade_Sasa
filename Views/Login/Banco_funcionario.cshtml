@@ -1,0 +1,130 @@
+﻿@{
+	Layout = ViewBag.Layout ?? "~/Views/Shared/_Layout-funcionarios.cshtml";
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+}
+
+<style type="text/css">
+	table {
+		border: 1px solid black;
+		border-spacing: 0px;
+	}
+
+	tr, th, td {
+		border: 1px solid black;
+		padding: 8px;
+		padding-left: 8px;
+		padding-right: 15px;
+	}
+</style>
+<br />
+<a href="/Imobiliaria/PageAreaAdministrativa">Voltar</a>
+<br />
+<br />
+<h2>Gerenciar funcionários</h2>
+<br>
+<form>
+	Matrícula: <input type="text" id="matricula" disabled /><br />
+	Email......: <input type="text" id="email" /><br />
+	Nome......: <input type="text" id="nome" /><br />
+	Senha......: <input type="password" id="senha" /><br /><br />
+
+	<input type="button" value="Buscar" onclick="consultar()" />
+	<input type="button" value="Salvar" onclick="inserirOuAlterar()" />
+	<input type="reset" value="Limpar" /><br /><br />
+</form>
+<table>
+	<thead>
+		<tr>
+			<th>Editar</th>
+			<th>Excluir</th>
+			<th>Matricula</th>
+			<th>Nome</th>
+			<th>E-mail</th>
+		</tr>
+	</thead>
+	<tbody id="corpo_da_tabela">
+	</tbody>
+</table>
+<script>
+	function editar(matricula, email, nome) {
+		document.getElementById("matricula").value = matricula;
+		document.getElementById("email").value = email;
+		document.getElementById("nome").value = nome;
+	}
+
+	function confirmarExcluir(matricula) {
+		if (confirm("Deseja realmente excluir?")) {
+			excluir(matricula);
+		}
+	}
+
+	function inserirOuAlterar() {
+
+		var jsonEnvio = {};
+		jsonEnvio.matricula = document.getElementById("matricula").value;
+		jsonEnvio.email = document.getElementById("email").value;
+		jsonEnvio.nome = document.getElementById("nome").value;
+		jsonEnvio.senha = document.getElementById("senha").value;
+		var acao = "";
+		print(jsonEnvio)
+		if (jsonEnvio.matricula != "") {
+			acao = "Alterar";
+		} else {
+			acao = "Inserir";
+		}
+		$.ajax({
+			url: "/Funcionario/" + acao + "/",
+			data: jsonEnvio,
+			type: "post",
+			success: function (resp) {
+				if (resp == "ok") {
+					alert("Funcionario cadastrado com sucesso!");
+					consultar();
+				} else {
+					alert(resp)
+				}
+			},
+			error: function () {
+				alert("Ocorreu um erro ao excluir!!!");
+			}
+		});
+	}
+
+	function consultar() {
+		var jsonEnvio = {};
+		$.ajax({
+			url: "/Funcionario/Buscar/",
+			data: jsonEnvio,
+			type: "post",
+			success: function (resp) {
+				document.getElementById("corpo_da_tabela").innerHTML = resp;
+			},
+			error: function () {
+				alert("Ocorreu um erro ao consultar!!!");
+			}
+		});
+	}
+
+	function excluir(matricula) {
+		var jsonEnvio = {};
+		jsonEnvio.matricula = matricula;
+		$.ajax({
+			url: "/Funcionario/Excluir",
+			data: jsonEnvio,
+			type: "post",
+			success: function (resp) {
+				if (resp == "ok") {
+					alert("Registro excluído com sucesso!");
+					consultar();
+				} else {
+					alert("Não foi possível excluir o registro!");
+				}
+			},
+			error: function () {
+				alert("Ocorreu um erro ao excluir!!!");
+			}
+		});
+	}
+
+</script>

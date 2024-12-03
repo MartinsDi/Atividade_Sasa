@@ -1,0 +1,545 @@
+/* Configuração CSS padrão */
+html {
+    font-size: 14px; /* Tamanho de fonte padrão */
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px; /* Aumenta o tamanho da fonte em telas maiores */
+        background: linear-gradient(to right, rgb(0, 0, 131), rgb(85, 11, 91)); /* Fundo em gradiente */
+    }
+}
+
+body {
+    margin: 0 0 60px; /* Remove margens e define espaço inferior para rodapé */
+    padding: 0;
+    width: 100%;
+    background-color: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para foco em botões, links e inputs */
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb; /* Sombra ao focar no elemento */
+}
+
+/* Rodapé */
+.footer-rodape {
+    background: linear-gradient(to right, rgb(0, 0, 131), rgb(85, 11, 91));
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info-contatos, .media-social {
+    flex: 1; /* Colunas crescem igualmente */
+    min-width: 200px; /* Largura mínima das colunas */
+    margin: 30px; /* Margem entre colunas */
+}
+
+/* Estilo para cabeçalhos e listas */
+h3 {
+    margin-bottom: 10px; /* Espaçamento abaixo do cabeçalho */
+}
+
+ul {
+    list-style-type: none; /* Remove marcadores das listas */
+    padding: 0; /* Remove padding padrão */
+}
+
+li {
+    margin: 5px 0; /* Espaçamento entre itens da lista */
+}
+
+/* Links */
+a {
+    color: white; /* Cor padrão dos links */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+    a:hover {
+        text-decoration: underline; /* Sublinhado ao passar o mouse */
+    }
+
+/* Ícones de redes sociais */
+.media-social img {
+    width: 24px; /* Tamanho do ícone */
+    height: 24px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaço entre ícones */
+}
+
+/* Área de cliente */
+.nav-Cliente-area {
+    margin-left: auto; /* Empurra o item "Área do Cliente" para a direita */
+}
+.navbar-brand {
+    color: white !important; /* Define a cor do texto como branco */
+}
+
+/* Menu de navegação */
+.navbar {
+    display: flex; /* Itens do menu em linha */
+    align-items: center; /* Centraliza verticalmente */
+    background: linear-gradient(to right, rgb(0, 0, 131), rgb(85, 11, 91));
+    position: relative; /* Para sobreposição de elementos */
+    z-index: 1000; /* Mantém o menu acima de outros elementos */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.menu {
+    display: flex; /* Flexbox para itens do menu */
+    justify-content: space-around; /* Espaçamento igual entre itens */
+    list-style: none; /* Remove marcadores */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margens */
+    flex: 3; /* Menu ocupa espaço flexível */
+}
+
+    .menu li {
+        text-align: center; /* Centraliza texto nos itens do menu */
+    }
+
+    .menu a {
+        color: black; /* Cor do texto */
+        text-decoration: none; /* Remove sublinhado */
+        padding: 10px; /* Espaçamento interno dos links */
+        display: block; /* Faz o link ocupar todo o espaço do item */
+        transition: background-color 0.3s, color 0.3s; /* Transição suave ao passar o mouse */
+    }
+
+        .menu a:hover {
+            background-color: black; /* Fundo preto ao passar o mouse */
+            color: white; /* Texto branco ao passar o mouse */
+        }
+
+}
+/* Container de pesquisa */
+.search-container {
+    flex: 1; /* Espaço flexível para a barra de pesquisa */
+    text-align: right; /* Alinha a barra à direita */
+}
+
+/* Barra de pesquisa */
+.search-bar {
+    padding: 8px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    width: 100%; /* Largura total */
+    max-width: 200px; /* Largura máxima */
+}
+
+/* Carrossel */
+.carousel {
+    position: relative; /* Posicionamento dos botões sobre as imagens */
+    max-width: 550px; /* Largura máxima do carrossel */
+    margin: auto; /* Centraliza o carrossel */
+    overflow: hidden; /* Esconde partes das imagens fora da tela */
+    max-width: 800px; /* Aumente esse valor para aumentar o carrossel */
+    height: 400px; /* Ajuste a altura conforme necessário */
+}
+
+.carousel-images {
+    display: flex; /* Imagens em linha */
+    transition: transform 0.5s ease-in-out; /* Transição suave ao mudar de imagem */
+}
+
+    .carousel-images img {
+        max-width: 100%; /* Imagem ocupa a largura total do carrossel */
+        display: none; /* Esconde as imagens por padrão */
+    }
+
+        .carousel-images img.active {
+            display: block; /* Exibe a imagem ativa */
+        }
+
+/* Botões de navegação do carrossel */
+.prev, .next {
+    position: absolute; /* Posiciona sobre o carrossel */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o posicionamento vertical */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    color: white; /* Cor do texto dos botões */
+    border: none; /* Remove borda */
+    padding: 10px; /* Espaçamento interno dos botões */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+.prev {
+    left: 10px;
+}
+/* Botão "anterior" à esquerda */
+.next {
+    right: 10px;
+}
+/* Botão "próximo" à direita */
+
+/* Títulos de seções */
+.title-section {
+    margin: 20px 0; /* Margens superior e inferior */
+}
+
+/* Centralização de texto */
+.text-center {
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Benefícios do seguro */
+.benefits-container {
+    display: flex; /* Flexbox para alinhar os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+}
+
+.benefit-item {
+    padding: 10px; /* Espaçamento interno entre os itens */
+}
+
+.benefit-content {
+    text-align: center; /* Centraliza o conteúdo dentro do item */
+}
+
+.benefit-icon {
+    height: 80px; /* Altura do ícone */
+    width: 80px; /* Largura do ícone */
+}
+
+/* Seção "Sobre" */
+.about-section {
+    background: linear-gradient(to right, rgb(0, 0, 131), rgb(85, 11, 91)); /* Fundo com gradiente sutil */
+    padding: 60px 20px; /* Espaçamento interno */
+    color: white; /* Cor do texto */
+    margin-top: 15px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #258cfb; /* Destaque no título */
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+    .about-text p {
+        margin-bottom: 20px;
+    }
+
+    .about-text .slogan {
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 30px;
+        color: #f7d94c; /* Cor especial para o slogan */
+    }
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+    .about-image img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px; /* Borda arredondada na imagem */
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    }
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Alinha em coluna em telas menores */
+    }
+
+    .about-text, .about-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/*area contato -----------------------------------------------------------------------------------------------*/
+.contato-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.contato-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn {
+    background-color: rgb(85, 11, 91));
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contato-info {
+    margin-bottom: 30px;
+}
+
+    .contato-info h3 {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    .contato-info ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+        .contato-info ul li {
+            margin-bottom: 10px;
+        }
+
+/*ajuda --------------------------------------------------------------------------------------------------*/
+.ajuda-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.faq-section {
+    margin-top: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.faq-question {
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    font-size: 1.2em; /* Tamanho da fonte da pergunta */
+    color: #258cfb; /* Cor das perguntas */
+}
+
+.faq-answer {
+    display: none; /* Respostas ocultas por padrão */
+    font-size: 1em; /* Tamanho da fonte da resposta */
+    margin-top: 10px; /* Espaço entre a pergunta e a resposta */
+}
+
+/* Estilo para exibir a resposta ao clicar na pergunta */
+.faq-question.active + .faq-answer {
+    display: block; /* Exibe a resposta quando a pergunta está ativa */
+}
+
+
+
+
+/*ABA serviços/ produtos ==============================================================================*/
+
+.planos-container {
+    background: linear-gradient(to right, rgb(0, 0, 131), rgb(85, 11, 91));
+    padding: 60px 20px; /* Espaçamento interno */
+    color: white; /* Cor do texto */
+    margin-top: 15px;
+}
+
+.listagem {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-title2 {
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(to right, #000083, #550B5B);
+    padding: 10px; /* Adiciona um espaçamento interno */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    text-align: center;
+}
+
+.planos {
+    display: flex; /* Alinha os planos em linha */
+    justify-content: space-around; /* Espaço entre os planos */
+    flex-wrap: wrap; /* Permite que os planos se movam para a linha seguinte se necessário */
+}
+
+.plano {
+    background: rgba(255, 255, 255, 0.1); /* Fundo sutil para os planos */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px; /* Margem entre os planos */
+    flex: 1; /* Permite que os planos cresçam igualmente */
+    min-width: 300px; /* Largura mínima dos planos */
+    color: black;
+}
+
+
+    .plano ul {
+        list-style-type: none; /* Remove marcadores das listas */
+        padding: 0; /* Remove padding padrão */
+    }
+
+    .plano li {
+        margin: 10px 0; /* Espaçamento entre itens da lista */
+    }
+
+
+    /*-------------------------------------- area do cliente-----------------------------------------------------*/
+/* Estilização do botão */
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 131);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilização geral do modal */
+.modal {
+    display: none; /* Modal escondido por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro e transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Certifique-se que o modal está no topo de todos os elementos */
+    overflow: auto; /* Garante que o conteúdo role se for grande demais */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destacar o modal */
+    position: relative;
+    z-index: 9998; /* Modal sempre no topo dentro do modal */
+}
+
+/* Formatação dos formulários */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Esconder os formulários de login/cadastro por padrão */
+#loginForm, #cadastroForm {
+    display: none;
+}
+
+/* Estilização do botão fechar */
+.close-btn {
+    float: right;
+    cursor: pointer;
+    color: red;
+    top:10%;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-body {
+    margin-top: 10px;
+    color:white;
+}
+
+/* Garante que o modal cubra todo o conteúdo */
+body.modal-open {
+    overflow: hidden; /* Remove o scroll quando o modal está aberto */
+}
+
+.modal {
+    z-index: 9999; /* Sobrescreve qualquer outro elemento com menor z-index */
+    padding: 10px; /* Garante um pequeno espaçamento nas bordas */
+}
+
+/*-====================================================================================================ADM*/
+.containerx2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-icon {
+    cursor: pointer;
+}
+
+.delete-icon {
+    color: red;
+    cursor: pointer;
+}

@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = ViewBag.Layout ?? "~/Views/Shared/_Layout-geral.cshtml";
+    ViewBag.Title = "SystemLock - Área do cliente";
+}
+
+
+    <!-- Botão da Área do Cliente -->
+    <button class="btn" id="areaClienteBtn">Área do Cliente</button>
+
+    <!-- Modal -->
+    <div class="modal" id="clienteModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Área do Cliente</h5>
+                <span class="close-btn" id="closeModal">&times;</span> <!-- Botão de fechar -->
+            </div>
+            <div class="modal-body">
+                <p>Por favor, selecione uma opção:</p>
+                <button class="btn" id="loginOption">Login</button>
+                <button class="btn" id="cadastroOption">Cadastro</button>
+
+                <!-- Formulário de Login -->
+                <div id="loginForm">
+                <br />
+                    <h6>Login</h6>
+                    <div class="form-group">
+                        <label for="loginEmail">E-mail:</label>
+                        <input type="email" id="loginEmail" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Senha:</label>
+                        <input type="password" id="loginPassword" placeholder="Digite sua senha">
+                    </div>
+                    <button class="btn" id="submitLogin">Entrar</button>
+                </div>
+
+                <!-- Formulário de Cadastro -->
+                <div id="cadastroForm">
+                    <h6>Cadastro</h6>
+                    <div class="form-group">
+                        <label for="fullName">Nome Completo:</label>
+                        <input type="text" id="fullName" placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Endereço:</label>
+                        <input type="text" id="address" placeholder="Digite seu endereço">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">E-mail:</label>
+                        <input type="email" id="registerEmail" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Senha:</label>
+                        <input type="password" id="registerPassword" placeholder="Digite sua senha">
+                    </div>
+                    <button class="btn" id="submitRegister">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>

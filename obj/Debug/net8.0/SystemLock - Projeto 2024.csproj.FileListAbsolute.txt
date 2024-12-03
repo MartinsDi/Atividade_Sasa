@@ -1,0 +1,78 @@
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\appsettings.json
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.staticwebassets.runtime.json
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.exe
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.deps.json
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.runtimeconfig.json
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.dll
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.pdb
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.AssemblyInfoInputs.cache
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.AssemblyInfo.cs
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.csproj.CoreCompileInputs.cache
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.RazorAssemblyInfo.cache
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.RazorAssemblyInfo.cs
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets\msbuild.SystemLock - Projeto 2024.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets\msbuild.build.SystemLock - Projeto 2024.props
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SystemLock - Projeto 2024.props
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SystemLock - Projeto 2024.props
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout-geral.cshtml.rz.scp.css
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\scopedcss\bundle\SystemLock - Projeto 2024.styles.css
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\scopedcss\projectbundle\SystemLock - Projeto 2024.bundle.scp.css
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.dll
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\refint\SystemLock - Projeto 2024.dll
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.pdb
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.genruntimeconfig.cache
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\ref\SystemLock - Projeto 2024.dll
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\System.Data.SQLite.dll
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\bin\Debug\net8.0\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.csproj.AssemblyReference.cache
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLo.182AF7A3.Up2Date
+C:\Users\Nandarum\source\repos\SystemLock - Projeto 2024\SystemLock - Projeto 2024\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout-funcionarios.cshtml.rz.scp.css
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\appsettings.Development.json
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\appsettings.json
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.staticwebassets.runtime.json
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.exe
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.deps.json
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.runtimeconfig.json
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.dll
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\SystemLock - Projeto 2024.pdb
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\System.Data.SQLite.dll
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\runtimes\linux-x64\native\SQLite.Interop.dll
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\runtimes\osx-x64\native\SQLite.Interop.dll
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\runtimes\win-x64\native\SQLite.Interop.dll
+c:\Projeto\SystemLock - Projeto 2024\bin\Debug\net8.0\runtimes\win-x86\native\SQLite.Interop.dll
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.csproj.AssemblyReference.cache
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.GeneratedMSBuildEditorConfig.editorconfig
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.AssemblyInfoInputs.cache
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.AssemblyInfo.cs
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.csproj.CoreCompileInputs.cache
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.MvcApplicationPartsAssemblyInfo.cache
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.RazorAssemblyInfo.cache
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.RazorAssemblyInfo.cs
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets.build.json
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets.development.json
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets\msbuild.SystemLock - Projeto 2024.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets\msbuild.build.SystemLock - Projeto 2024.props
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SystemLock - Projeto 2024.props
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SystemLock - Projeto 2024.props
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\staticwebassets.pack.json
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout-funcionarios.cshtml.rz.scp.css
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout-geral.cshtml.rz.scp.css
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\scopedcss\bundle\SystemLock - Projeto 2024.styles.css
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\scopedcss\projectbundle\SystemLock - Projeto 2024.bundle.scp.css
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLo.182AF7A3.Up2Date
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.dll
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\refint\SystemLock - Projeto 2024.dll
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.pdb
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\SystemLock - Projeto 2024.genruntimeconfig.cache
+c:\Projeto\SystemLock - Projeto 2024\obj\Debug\net8.0\ref\SystemLock - Projeto 2024.dll

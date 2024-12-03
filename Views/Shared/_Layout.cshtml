@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Define o tipo de documento como HTML5 e especifica que o idioma da página é português -->
+
+<head>
+    <!-- Cabeça/configurações iniciais -->
+    <meta charset="utf-8" /> <!-- Define a codificação de caracteres, garantindo a exibição correta de caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ajusta a página para ser responsiva -->
+    <title>@ViewData["Title"] - SystemLock - Home Empresa_SystemLock</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> <!-- Importa a folha de estilo do Bootstrap -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> <!-- Importa a folha de estilo personalizada 'site.css' -->
+    <link rel="stylesheet" href="~/Empresa_SystemLock.styles.css" asp-append-version="true" /> <!-- Importa outra folha de estilo específica do projeto -->
+    </head>
+
+<body>
+    <!-- Corpo do site, informações contidas -->
+    <header>
+        <!-- Início do cabeçalho -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom">
+            <!-- Barra de navegação com estilo Bootstrap -->
+            <div class="container-fluid">
+                <!-- Container que mantém o conteúdo da barra de navegação alinhado -->
+                <a class="navbar-brand" asp-area="" asp-controller="Pagina_Home" asp-action="Index"><img src="~/img/icon.gerais/Logo_da_marca.png" alt="Logo" style="height: 40px;" /> </a> <!-- Logo que direciona para a página inicial -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <!-- Botão para colapsar o menu em telas pequenas -->
+                    <span class="navbar-toggler-icon"></span> <!-- Ícone do botão de colapso -->
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Menu expansível/collapse -->
+                    <ul class="navbar-nav flex-grow-1 me-auto">
+                        <!-- Lista de navegação -->
+                        <li class="nav-item nav-Cliente-area">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Pagina_Home" asp-action="Cliente">Área do cliente</a> <!-- Link para a "Área do cliente" -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Pagina_Home" asp-action="Funcionarios">Funcionários</a> <!-- Link para a "Área do cliente" -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Pagina_Home" asp-action="Produtos">Produtos</a> <!-- Link para a página de serviços -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Pagina_Home" asp-action="Ajuda">Ajuda</a> <!-- Link para a página de ajuda -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Pagina_Home" asp-action="Contato">Contato</a> <!-- Link para a página de contato -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Pagina_Home" asp-action="Sobre">Sobre</a> <!-- Link para a página "Sobre" -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Sessões e divisões da página-->
+        <section class="Sobre">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <!-- Imagens do carrossel -->
+                    <img src="~/img/carossel/ORBITBAND.png" class="active"> <!-- Imagem ativa inicialmente -->
+                    <img src="~/img/carossel/TAGTRACK.png"> <!-- Segunda imagem do carrossel -->
+                    <img src="~/img/carossel/LOCAGUARD.png"> <!-- Terceira imagem do carrossel -->
+                    <img src="~/img/carossel/Contrate.png"> <!-- Quarta imagem do carrossel -->
+
+                </div>
+                <!-- Botões de navegação para o carrossel -->
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button> <!-- Botão para voltar -->
+                <button class="next" onclick="moveSlide(1)">&#10095;</button> <!-- Botão para avançar -->
+            </div>
+        </section>
+    </header>
+
+
+    <!-- Sessão dos benefícios em fazer parte da SystemLock-->
+    <div class="col-12 margin-top margin-bottom title-section">
+        <h2 class="text-center">Benefícios em fazer parte da SystemLock</h2>
+    </div>
+    <div class="row benefits-container">
+        <div class="benefit-item col-6 col-md-3">
+            <div class="benefit-content text-center">
+                <p>
+                    <img alt="Proteção Imediata" src="/img/icon.beneficios/relogio.png" ; class="benefit-icon" />
+                </p>
+                <p>
+                    <strong>Segurançs imediata<br /></strong>
+                    Aqui não temos carência! <br />
+                    O plano começa a valer após a confirmação.
+                </p>
+            </div>
+        </div>
+        <div class="benefit-item col-6 col-md-3">
+            <div class="benefit-content text-center">
+                <p>
+                    <img alt="Cobertura Global" src="/img/icon.beneficios/global.png" ; class="benefit-icon" />
+                </p>
+                <p>
+                    <strong>Cobertura global<br /></strong>
+                    Faça suas viagens nacionais e internacionais sempre tranquilo.
+                </p>
+            </div>
+        </div>
+        <div class="benefit-item col-6 col-md-3">
+            <div class="benefit-content text-center">
+                <p>
+                    <img alt="Seguro por 24 Meses" src="/img/icon.beneficios/gps.png" ; class="benefit-icon" />
+                </p>
+                <p>
+                    <strong>Rastreamento 24 horas<br /></strong>
+                    Localização em tempo real, integrado a concierge de viagem e serviços de mobilidalidade.
+                </p>
+            </div>
+        </div>
+        <div class="benefit-item col-6 col-md-3">
+            <div class="benefit-content text-center">
+                <p>
+                    <img alt="APP LocaGuard" src="/img/icon.beneficios/app.png" ; class="benefit-icon" />
+                </p>
+                <p>
+                    <strong>APP LocaGuard<br /></strong>
+                    Ganhe acesso gratuito ao app de monitoramento e integre-se a um estilo de vida mais controlado.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <!-- Conteúdo principal -->
+        <main role="main" class="pb-3">
+            @RenderBody()                                                                                                                     <!-- Renderiza o conteúdo específico de cada página -->
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <!-- Rodapé -->
+        <div class="footer-rodape">
+            <!-- Container principal do rodapé que agrupa as informações de contato e redes sociais -->
+            <div class="info-contatos">
+                <!-- Contém os detalhes de contato da empresa (email, telefone, WhatsApp, endereço) -->
+                <h3>Formas de Contato</h3>
+                <ul>
+                    <li>Email: <a href="mailto:systemlock@gmail.com">contato@systemlock.com</a></li>
+                    <li>Telefone: 0800 563 173 234</li>
+                    <li>Whatsapp: (11) 91234-5678</li>
+                </ul>
+            </div>
+
+            <div class="media-social">
+                <!-- Inclui os ícones de redes sociais (Facebook, Twitter e LinkedIn) -->
+                <h3>Siga-nos</h3>
+                <ul>
+                    <!-- Link para LinkedIn (ícone deve estar na pasta "images") -->
+                    <li><a href="#"><img src="/img/icon.redes/facebook.png" alt="Ícone do Facebook"></a>Facebook: SystemLockOficial</li>
+                    <li><a href="#"><img src="/img/icon.redes/twitter.png" alt="Twitter"></a>Twitter: systemlock_app</li>
+                    <li><a href="#"><img src="/img/icon.redes/linkedin.png" alt="LinkedIn"></a>LinkedIn: SystemLock Corp</li>
+                    <li><a href="#"><img src="/img/icon.redes/instagram.png" alt="Instagram"></a>Instagram: systemlock_oficial</li>
+                </ul>
+            </div>
+
+            <div class="container">
+                2024 - SystemLock - Localizada em Avenida Paulista, 431, São Paulo CEP :01310-100 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>                                     <!-- Informações sobre direitos autorais e link para política de privacidade -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>                                                                                   <!-- Scripts do jQuery e Bootstrap -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>                                                                   <!-- Script personalizado do site -->
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)                                                                                     <!-- Seção para scripts adicionais, caso necessário -->
+
+</body>
+
+</html>

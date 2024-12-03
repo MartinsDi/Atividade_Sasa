@@ -1,0 +1,98 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = ViewBag.Layout ?? "~/Views/Shared/_Layout-geral.cshtml";
+    ViewBag.Title = "SystemLock - Planos & Produtos";
+
+}<section class="planos-container">
+    <h2 class="text-center title-section">PLANOS DISPONÍVEIS</h2>
+    <div class="row planos">
+
+       
+
+        <!-- Plano Básico -->
+        <div class="col-md-6 plano essencial">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title2">PLANO ESSENCIAL</h3>
+                    <p> Ideal para usuários que buscam apenas as funções básicas de localização e um carro ocasional.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="card-title">Benefícios:</li>
+                        <li class="listagem">- Acesso ao APP LocaGuard com diversas funcionalidades;</li>
+                        <li class="listagem">- Localização em tempo real de frotas de ônibus em todo o Brasil;</li>
+                        <li class="listagem">- Dois reservas de carros com motorista, até 30 km/mês;</li>
+                        <li class="listagem">- Não incluso acessórios SystemLock;</li>
+                        <br />
+                        <li class="card-title">Seguro:</li>
+                        <ul>
+                            <li class="listagem">- Reembolso não disponível para este plano;</li>
+                            <li class="listagem">- Funções ADM: emissão de sons, bloqueio, acesso remoto e formatação do dispositivo;</li>
+                            <br />
+                            <li class="card-title2"> MENSAL R$ 550,00</li>
+                            <li class="card-title2"> ANUAL: R$ 6.000,00</li>
+                            <li class="card-title2">Parcelados em até 6x sem juros </li>
+                    </ul>
+                    <a href="@Url.Action("Pagamento", "Produtos")" class="btn btn-primary d-block mt-3">Contrate</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 plano tranquilo">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title2">PLANO TRANQUILO</h3>
+                    <p>
+                        Ideal para Usuários que buscam total segurança e conveniência, tanto para transporte quanto para proteção do dispositivo.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="card-title">Benefícios:</li>
+                        <li class="listagem">- Acesso ao APP LocaGuard com diversas funcionalidades;</li>
+                        <li class="listagem">- Localização em tempo real de frotas de ônibus em todo o Brasil;</li>
+                        <li class="listagem">- Receba TagTrack;</li>
+                        <li class="listagem">- Quatro reservas de carros com motorista, até 50 km/mês;</li>
+                        <br />
+                        <li class="card-title">Seguro:</li>
+                        <ul>
+                            <li class="listagem">- Reembolso de até 50% do celular em caso de roubo ou furto;</li>
+                            <li class="listagem">- Funções ADM: emissão de sons, bloqueio, acesso remoto e formatação do dispositivo;</li>
+                            <br />
+                            <li class="card-title2"> MENSAL R$ 1.100,00</li>
+                            <li class="card-title2"> ANUAL: R$ 11.400,00</li>
+                            <li class="card-title2">Parcelados em até 10x sem juros </li>
+                    </ul>
+                    <a href="@Url.Action("Pagamento", "Produtos")" class="btn btn-primary d-block mt-3">Contrate</a>
+                </div>
+            </div>
+         </div>
+        <!-- Plano VIP -->
+        <div class="col-md-6 plano exclusivo vip">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title2">PLANO EXCLUSIVO VIP</h3>
+                    <p class="listagem">Ideal para usuários que buscam total segurança e conveniência, tanto para transporte quanto para proteção do dispositivo.</p>
+                    <ul class="list-unstyled">
+                        <li class="card-title">Benefícios:</li>
+                        <li class="listagem">- Acesso ao APP LocaGuard com diversas funcionalidades;</li>
+                        <li class="listagem">- Localização em tempo real de frotas de ônibus em todo o Brasil;</li>
+                        <li class="listagem">- Receba TagTrack;</li>
+                        <li class="listagem">- Receba OrbitBand;</li>
+                        <li class="listagem">- Oito reservas de carros com motorista, até 70 km/mês;</li>
+                        <br />
+                        <li class="card-title">Seguro:</li>
+                        <ul>
+                            <li class="listagem">- Reembolso de até 100% do celular em caso de roubo ou furto;</li>
+                            <li class="listagem">- Funções ADM: emissão de sons, bloqueio, acesso remoto e formatação do dispositivo;</li>
+                            <br />
+                            <li class="card-title2"> MENSAL R$ 1.700,00</li>
+                            <li class="card-title2"> ANUAL: R$ 19.000,00</li>
+                            <li class="card-title2">Parcelados em até 12x sem juros </li>
+                        </ul>
+                    </ul>
+                    <a href="@Url.Action("Pagamento", "Produtos")" class="btn btn-primary d-block mt-3">Contrate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

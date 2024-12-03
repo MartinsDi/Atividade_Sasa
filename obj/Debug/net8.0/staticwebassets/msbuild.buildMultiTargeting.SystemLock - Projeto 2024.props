@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SystemLock - Projeto 2024.props" />
+</Project>

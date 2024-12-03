@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+                                                                                                                           <!-- Define o tipo de documento como HTML5 e especifica que o idioma da página é portugues-->
+
+<head>
+    <!-- Cabeça/configurações iniciais -->
+
+    <meta charset="utf-8" />                                                                                                                  <!-- Define a codificação de caracteres, garantindo a exibição correta de caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />                                                                  <!-- Ajusta a página para ser responsiva, ou seja, adaptável ao tamanho de diferentes telas (ex: celular, tablet) -->
+    <title>@ViewData["Title"] - Empresa_SystemLock_Restrito</title>                                                                                    <!-- Define o título da página com base na variável ViewData["Title"], seguido por "Empresa SystemLock" -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />                                                               <!-- Importa a folha de estilo do Bootstrap, uma biblioteca de CSS que facilita a criação de layouts responsivos e componentes de interface -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />                                                                 <!-- Importa a folha de estilo personalizada 'site.css', e 'asp-append-version="true"' adiciona uma versão ao arquivo para evitar cache desatualizado -->
+    <link rel="stylesheet" href="~/Empresa_SystemLock.styles.css" asp-append-version="true" />                                                <!-- Importa outra folha de estilo para definir estilos específicos do projeto -->
+
+</head>
+
+
+
+<body>
+    <!-- Corpo do site, informações contidas -->
+    <header>
+        <!-- Início do cabeçalho -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom">
+            <!-- Barra de navegação com estilo Bootstrap -->
+            <div class="container-fluid">
+                <!-- Container que mantém o conteúdo da barra de navegação alinhado -->
+                <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Admin"><img src="~/img/icon.gerais/Logo_da_marca.png" alt="Logo" style="height: 40px;" /> </a> <!-- Logo que direciona para a página inicial -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <!-- Botão para colapsar o menu em telas pequenas -->
+                    <span class="navbar-toggler-icon"></span> <!-- Ícone do botão de colapso -->
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Menu expansível/collapse -->
+                    <ul class="navbar-nav flex-grow-1 me-auto">
+                        <!-- Lista de navegação -->
+                        <li class="nav-item nav-Cliente-area">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Login" asp-action="Perfil">Perfil</a> <!-- Link para a "Área do cliente" -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Login" asp-action="Banco_clientes">Banco de dados clientes</a> <!-- Link para a "Área do cliente" -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Login" asp-action="Banco_funcionario">Banco de dados Funcionários</a> <!-- Link para a página de serviços -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Login" asp-action="Criar_perfil">Novo perfil</a> <!-- Link para a página de ajuda -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Login" asp-action="Retornar">Sair</a> <!-- Link para a página "Sobre" -->
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <!-- Conteúdo principal -->
+            <main role="main" class="pb-3">
+                @RenderBody()                                                                                                                     <!-- Renderiza o conteúdo específico de cada página -->
+            </main>
+        </div>
+
+        <footer class="border-top footer text-muted">
+            <!-- Rodapé -->
+            <div class="footer-rodape">
+                <!-- Container principal do rodapé que agrupa as informações de contato e redes sociais -->
+                <div class="info-contatos">
+                    <!-- Contém os detalhes de contato da empresa (email, telefone, WhatsApp, endereço) -->
+                    <h3>Formas de Contato</h3>
+                    <ul>
+                        <li>Email: <a href="mailto:systemlock@gmail.com">contato@systemlock.com</a></li>
+                        <li>Telefone: 0800 563 173 234</li>
+                        <li>Whatsapp: (11) 91234-5678</li>
+                    </ul>
+                </div>
+
+                <div class="media-social">
+                    <!-- Inclui os ícones de redes sociais (Facebook, Twitter e LinkedIn) -->
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <!-- Link para LinkedIn (ícone deve estar na pasta "images") -->
+                        <li><a href="#"><img src="/img/icon.redes/facebook.png" alt="Ícone do Facebook"></a>Facebook: SystemLockOficial</li>
+                        <li><a href="#"><img src="/img/icon.redes/twitter.png" alt="Twitter"></a>Twitter: systemlock_app</li>
+                        <li><a href="#"><img src="/img/icon.redes/linkedin.png" alt="LinkedIn"></a>LinkedIn: SystemLock Corp</li>
+                        <li><a href="#"><img src="/img/icon.redes/instagram.png" alt="Instagram"></a>Instagram: systemlock_oficial</li>
+                    </ul>
+                </div>
+
+                <div class="container">
+                    2024 - SystemLock - Localizada em Avenida Paulista, 431, São Paulo CEP :01310-100 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>                                     <!-- Informações sobre direitos autorais e link para política de privacidade -->
+                </div>
+            </div>
+        </footer>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>                                                                                   <!-- Scripts do jQuery e Bootstrap -->
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>                                                                   <!-- Script personalizado do site -->
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+        @await RenderSectionAsync("Scripts", required: false)                                                                                     <!-- Seção para scripts adicionais, caso necessário -->
+
+</body>
+
+</html>

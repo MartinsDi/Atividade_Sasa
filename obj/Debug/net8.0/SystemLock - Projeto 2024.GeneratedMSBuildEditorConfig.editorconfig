@@ -1,0 +1,99 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SystemLock___Projeto_2024
+build_property.RootNamespace = SystemLock___Projeto_2024
+build_property.ProjectDir = C:\Projeto\SystemLock - Projeto 2024\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Projeto\SystemLock - Projeto 2024
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Login/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Login/Banco_funcionario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQmFuY29fZnVuY2lvbmFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Login/Criar_perfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ3JpYXJfcGVyZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Login/Retornar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmV0b3JuYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Pagina_Home/Ajuda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hX0hvbWVcQWp1ZGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Pagina_Home/Cliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hX0hvbWVcQ2xpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Pagina_Home/Contato.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hX0hvbWVcQ29udGF0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Pagina_Home/Funcionarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hX0hvbWVcRnVuY2lvbmFyaW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Pagina_Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hX0hvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Pagina_Home/Produtos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hX0hvbWVcUHJvZHV0b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Pagina_Home/Sobre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hX0hvbWVcU29icmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Shared/_Layout-funcionarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQtZnVuY2lvbmFyaW9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-o4icuhthye
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Shared/_Layout-geral.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQtZ2VyYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-thblznd8qt
+
+[C:/Projeto/SystemLock - Projeto 2024/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-il3l46atl0

@@ -1,0 +1,49 @@
+﻿@{
+    Layout = ViewBag.Layout ?? "~/Views/Shared/_Layout-funcionarios.cshtml";
+
+    ViewBag.Title = "SystemLock - Criação";
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+}
+
+	<h2>Novo funcionário</h2>
+	<br>
+
+	Nome.......:
+	<input type="text" id="nome" />
+	<br />
+	E-mail.....:
+	<input type="text" id="email" />
+	<br />
+	Senha......:
+	<input type="text" id="senha" />
+	<br />
+	<br />
+
+	<input type="button" value="Concluir Cadastro" onclick="inserir()" />
+
+	<script type="text/javascript">
+
+		function inserir() {
+			var jsonEnvio = {};
+			jsonEnvio.email = document.getElementById("email").value;
+			jsonEnvio.nome = document.getElementById("nome").value;
+			jsonEnvio.senha = document.getElementById("senha").value;
+
+			$.ajax({
+				url: "/Funcionario/Inserir/",
+				data: jsonEnvio,
+				type: "post",
+				success: function (resp) {
+					if (resp == "ok") {
+						alert("Funcionario cadastrado com sucesso!");
+					} else {
+						alert(resp);
+					}
+				},
+				error: function () {
+					alert("Ocorreu um erro ao cadastrar!!!");
+				}
+			});
+		}
+	</script>
+

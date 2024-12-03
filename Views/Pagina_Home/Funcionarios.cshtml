@@ -1,0 +1,35 @@
+﻿@{
+    Layout = ViewBag.Layout ?? "~/Views/Shared/_Layout-geral.cshtml";
+    ViewBag.Title = "SystemLock - Funcionários";
+}
+
+<!-- Botão da Área do Cliente -->
+<button class="btn" id="areaClienteBtn">Restrito à funcionários</button>
+
+<!-- Modal -->
+<div class="modal" id="clienteModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5>Acesso de funcionários</h5>
+            <span class="close-btn" id="closeModal">&times;</span> <!-- Botão de fechar -->
+        </div>
+        <div class="modal-body">
+            Digite seus dados de acesso da empresa:
+            <form asp-controller="Login" asp-action="ValidarLogin" method="post">
+                <div class="form-group">
+                    <label for="loginEmail">E-mail:</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Senha:</label>
+                    <input type="password" id="loginPassword" name="senha" placeholder="Digite sua senha" required>
+                </div>
+                <button type="submit" class="btn" id="submitLogin">Entrar</button>
+            </form>
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <p style="color: red;">@ViewBag.ErrorMessage</p>
+            }
+        </div>
+    </div>
+</div>
